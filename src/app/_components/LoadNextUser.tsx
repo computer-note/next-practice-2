@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import User from './User';
 
-function LoadNextUser(props) {
+function LoadNextUser(props: any) {
   const [user, setUser] = useState<any>(props.user);
 
   function handleLoadButton() {

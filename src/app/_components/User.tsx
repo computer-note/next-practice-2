@@ -1,4 +1,4 @@
-function User(props) {
+function User(props: any) {
   const { user } = props;
 
   return (
