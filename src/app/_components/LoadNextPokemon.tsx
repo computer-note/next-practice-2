@@ -11,9 +11,9 @@ function LoadNextPokemon(props: any) {
       const response = await fetch(
         `https://pokeapi.co/api/v2/pokemon/${+pokemon.id + 1}/`
       );
-      const pokemon = await response.json();
+      const data = await response.json();
 
-      setPokemon(pokemon);
+      setPokemon(data);
     }
 
     loadData();
